@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101b2d">
+  <meta name="description" content="An interactive phishing awareness course: spot suspicious messages, inspect links, and report safely.">
+  <title>Spot the Hook | Phishing Awareness</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Spot the Hook home"><span class="brand-mark">S</span><span>SECURITY<span class="brand-light"> / AWARENESS</span></span></a>
+    <nav aria-label="Main navigation"><a href="#learn">Learn</a><a href="#examples">Examples</a><a href="#quiz">Quiz</a></nav>
+    <a class="top-cta" href="#quiz">Test yourself <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse"></span> SECURITY AWARENESS · 6 MIN READ</p>
+        <h1>Pause before<br>you <em>click.</em></h1>
+        <p class="hero-intro">Phishing works by making a risky action feel routine. Learn the signals, slow the moment down, and know what to do next.</p>
+        <a class="button button-primary" href="#learn">Start the training <span aria-hidden="true">↓</span></a>
+        <div class="hero-proof"><span class="proof-icon">✓</span><span>Practical habits. No security jargon required.</span></div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a suspicious email being inspected">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="mail-card"><div class="mail-top"><span>INBOX</span><span class="mail-dots">•••</span></div><div class="mail-avatar">!</div><div class="mail-lines"><b>Account alert</b><span>From: security@micros0ft…</span></div><div class="mail-rule"></div><p>Your account will be closed.<br>Verify your details now.</p><div class="fake-link">REVIEW ACCOUNT <span>↗</span></div><div class="warning-stamp">SUSPICIOUS</div></div>
+        <div class="magnifier"><span></span></div><div class="float-tag tag-link">↗ &nbsp; Check the real domain</div><div class="float-tag tag-urgent">! &nbsp; Urgency is a clue</div>
+      </div>
+      <div class="hero-bottom"><span>01 — RECOGNIZE</span><span>02 — VERIFY</span><span>03 — REPORT</span><span class="scroll-note">SCROLL TO EXPLORE ↓</span></div>
+    </section>
+
+    <section class="intro section-pad" id="learn">
+      <div class="section-label">THE BASICS <span>01 / 04</span></div>
+      <div class="intro-grid"><h2>A familiar message.<br><em>A hidden motive.</em></h2><div><p class="lead">Phishing is a deceptive message designed to make you reveal information, open a harmful file, send money, or visit a fake website.</p><p>It can arrive by email, text, phone call, social media, or collaboration apps. Attackers often impersonate a trusted brand or person and create pressure so you act before checking.</p></div></div>
+      <div class="signal-grid">
+        <article class="signal"><span class="signal-number">01</span><div class="signal-icon">⌛</div><h3>Unexpected urgency</h3><p>“Act now” or “your account closes today” is meant to rush your judgment.</p></article>
+        <article class="signal"><span class="signal-number">02</span><div class="signal-icon">◎</div><h3>Odd sender or link</h3><p>Look for misspellings, extra words, or a domain that is almost—but not quite—right.</p></article>
+        <article class="signal"><span class="signal-number">03</span><div class="signal-icon">▤</div><h3>Unusual request</h3><p>Be wary of unexpected requests for passwords, payment, gift cards, or confidential files.</p></article>
+      </div>
+    </section>
+
+    <section class="dark-section section-pad" id="examples">
+      <div class="section-label">ANATOMY OF A PHISH <span>02 / 04</span></div>
+      <div class="dark-heading"><h2>Spot the signals.<br><em>Read between the lines.</em></h2><p>Realistic examples are shown as training simulations. Hover or focus a highlighted clue to see why it deserves a second look.</p></div>
+      <div class="example-layout">
+        <div class="message-window"><div class="window-bar"><span class="window-dot red"></span><span class="window-dot yellow"></span><span class="window-dot green"></span><span class="window-title">Message preview · training example</span></div><div class="message-meta"><span>From</span><b>Help Desk &lt;helpdesk@company-support<strong class="clue" tabindex="0" data-tip="The sender domain is not the organization's known domain. Verify using a saved contact or official directory.">-secure</strong>.com&gt;</b><span>Subject</span><b><strong class="clue" tabindex="0" data-tip="Unexpected threats and short deadlines are common pressure tactics.">ACTION REQUIRED: mailbox suspended in 30 minutes</strong></b></div><div class="message-body"><p>Hello,</p><p>We noticed unusual activity. Your access will be removed unless you <strong class="clue" tabindex="0" data-tip="Don't use a link in an unexpected warning. Navigate to the service using a bookmark or known address.">sign in here</strong> to confirm your password.</p><p>For security, do not contact the IT team about this automated notice.</p><p>Thank you,<br>IT Support</p><button class="fake-button" type="button" aria-label="Example suspicious link, does not navigate">Confirm account</button><p class="small-note">This button is a safe training example and does not open a link.</p></div></div>
+        <aside class="clue-notes"><p class="eyebrow">THREE THINGS TO QUESTION</p><div><span>01</span><p><b>Sender doesn't match</b><br>Compare the full domain with the organization's official domain.</p></div><div><span>02</span><p><b>Pressure and threat</b><br>Pause. Contact the organization through a known channel.</p></div><div><span>03</span><p><b>Password request by link</b><br>Never enter credentials from an unexpected message link.</p></div><div class="remember">A single clue is a reason to verify. Several together? Don't interact.</div></aside>
+      </div>
+      <div class="scenario-row"><div><span class="eyebrow">ALSO WATCH FOR</span><h3>More than email.</h3></div><div class="scenario"><span>SMS / SMISHING</span><p>A delivery text asks you to pay a small “redelivery fee” through a shortened link.</p></div><div class="scenario"><span>VOICE / VISHING</span><p>A caller claiming to be your bank asks you to read out a one-time login code.</p></div><div class="scenario"><span>IMPERSONATION</span><p>A “manager” messages urgently asking you to buy gift cards and send the codes.</p></div></div>
+    </section>
+
+    <section class="habits section-pad">
+      <div class="section-label">A SAFER RESPONSE <span>03 / 04</span></div>
+      <div class="habits-heading"><h2>Make a small pause<br><em>your strongest defense.</em></h2><p>You don't need to prove a message is malicious. You only need to verify before taking a risky action.</p></div>
+      <div class="steps">
+        <article><span>01</span><div><h3>Stop</h3><p>Don't click, reply, open an attachment, scan a QR code, or share a verification code.</p></div><b>⏸</b></article>
+        <article><span>02</span><div><h3>Check independently</h3><p>Open the official app or type a known address yourself. Contact the sender using a number or address you already trust.</p></div><b>⌕</b></article>
+        <article><span>03</span><div><h3>Report and remove</h3><p>Use your organization's phishing-report option or contact its IT/security team. Then delete the message.</p></div><b>↗</b></article>
+        <article><span>04</span><div><h3>If you already interacted</h3><p>Tell IT/security promptly. Change a disclosed password from the official site, revoke active sessions if available, and contact your bank if payment details were shared.</p></div><b>!</b></article>
+      </div>
+      <div class="golden-rule"><span>THE GOLDEN RULE</span><p>Never share your password or one-time code because a message asks you to.</p></div>
+      <div class="best-practice"><div><span class="practice-icon">✳</span><h3>Build habits that help</h3></div><ul><li>Use unique passwords and a password manager.</li><li>Turn on multi-factor authentication.</li><li>Keep devices and apps updated.</li><li>Verify payment or account changes through a second channel.</li></ul></div>
+    </section>
+
+    <section class="quiz-section section-pad" id="quiz">
+      <div class="section-label">QUICK KNOWLEDGE CHECK <span>04 / 04</span></div>
+      <div class="quiz-heading"><h2>Can you spot<br><em>the hook?</em></h2><p>Choose the safest response for each situation. You can retry and review the explanations.</p></div>
+      <div class="quiz-card" id="quiz-card" aria-live="polite">
+        <div class="quiz-progress"><span id="question-count">QUESTION 1 OF 3</span><div class="progress-track"><span id="progress-fill"></span></div></div>
+        <h3 id="question-text"></h3><div class="answers" id="answers"></div><div class="quiz-feedback" id="feedback" hidden></div><div class="quiz-controls"><span id="score-text">Score: 0</span><button class="button button-dark" id="next-button" type="button" disabled>Next question <span>→</span></button></div>
+      </div>
+    </section>
+
+    <section class="finish section-pad"><div class="finish-mark">✓</div><p class="eyebrow">YOU'RE READY TO PAUSE</p><h2>When something feels off,<br><em>verify through another route.</em></h2><p>Share the habit: pause, check independently, report suspicious messages.</p><a href="#home" class="text-link">Back to top ↑</a></section>
+  </main>
+  <footer><a class="brand" href="#home"><span class="brand-mark">S</span><span>SECURITY<span class="brand-light"> / AWARENESS</span></span></a><span>Training module · CodeAlpha Cyber Security Internship · Task 2</span><span>Stay curious. Stay careful.</span></footer>
+</body>
+</html>
